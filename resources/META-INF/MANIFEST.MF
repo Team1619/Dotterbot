@@ -1,4 +1,4 @@
-MIDlet-Name: DotterBot
+MIDlet-Name: Dotterbot
 MIDlet-Version: 1.0.0
 MIDlet-Vendor: FIRST
 MIDlet-1: RobotTemplate, , org.team1619.RobotTemplate
