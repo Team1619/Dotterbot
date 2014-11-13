@@ -13,8 +13,7 @@ public class RobotMap {
     public static final int backleft = 5;
     public static final int claw = 2;
     public static final int arm = 4;
-    
-    public static final String cameronsSpecialVariable = "Hi";
+
     // For example to map the left and right motors, you could define the
     // following variables to use with your drivetrain subsystem.
     // public static final int leftMotor = 1;
