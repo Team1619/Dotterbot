@@ -13,7 +13,7 @@ public class RobotMap {
     public static final int frontRight = 1;             //motor controller IDs
     public static final int frontLeft = 7;
     public static final int backRight = 3;
-    public static final int backleft = 5;
+    public static final int backLeft = 5;
     public static final int claw = 2;
     public static final int arm = 4;
 

@@ -10,7 +10,7 @@ import edu.wpi.first.wpilibj.buttons.DigitalIOButton;
  * interface to the commands and command groups that allow control of the robot.
  */
 public class OI {
-    //public Joystick leftJoystick = new Joystick(RobotMap.joystickPort1);
+    public Joystick leftJoystick = new Joystick(RobotMap.joystickPort1);
     public Joystick rightJoystick = new Joystick(RobotMap.joystickPort2);
     
     //// CREATING BUTTONS

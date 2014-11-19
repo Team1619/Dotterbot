@@ -4,6 +4,7 @@ import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import org.team1619.OI;
 import org.team1619.subsystems.Claw;
+import org.team1619.subsystems.Drivetrain;
 
 /**
  * The base for all commands. All atomic commands should subclass CommandBase.
@@ -16,6 +17,7 @@ public abstract class CommandBase extends Command {
     public static OI oi;
     // Create a single static instance of all of your subsystems
     public static Claw claw;
+    public static Drivetrain drivetrain;
 
     public static void init() {
         // This MUST be here. If the OI creates Commands (which it very likely
@@ -26,6 +28,7 @@ public abstract class CommandBase extends Command {
         oi = new OI();
         
         claw = new Claw();
+        drivetrain = new Drivetrain();
     }
 
     public CommandBase(String name) {
