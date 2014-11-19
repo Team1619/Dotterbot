@@ -19,6 +19,7 @@ public class MoveClaw extends CommandBase {
 
     // Called just before this Command runs the first time
     protected void initialize() {
+        setInterruptible(true);
     }
 
     // Called repeatedly when this Command is scheduled to run
@@ -39,5 +40,6 @@ public class MoveClaw extends CommandBase {
     // Called when another command which requires one or more of the same
     // subsystems is scheduled to run
     protected void interrupted() {
+        claw.stopMove();
     }
 }

@@ -7,8 +7,8 @@ package org.team1619;
  * floating around.
  */
 public class RobotMap {
-    public static final int joystickPort1 = 1234567890; //ports for joysticks
-    public static final int joystickPort2 = 1234567890;
+    public static final int joystickPort1 = 1; //ports for joysticks
+    public static final int joystickPort2 = 2;
     
     public static final int frontRight = 1;             //motor controller IDs
     public static final int frontLeft = 7;
