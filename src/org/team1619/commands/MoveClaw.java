@@ -1,13 +1,18 @@
-
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package org.team1619.commands;
 
 /**
  *
- * @author bradmiller
+ * @author DanielHathcock
  */
-public class ExampleCommand extends CommandBase {
-
-    public ExampleCommand() {
+public class MoveClaw extends CommandBase {
+    
+    public MoveClaw() {
+        requires(claw);
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
     }
@@ -18,6 +23,7 @@ public class ExampleCommand extends CommandBase {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
+        claw.startMove(oi.rightJoystick.getX());
     }
 
     // Make this return true when this Command no longer needs to run execute()
@@ -27,6 +33,7 @@ public class ExampleCommand extends CommandBase {
 
     // Called once after isFinished returns true
     protected void end() {
+        claw.stopMove();
     }
 
     // Called when another command which requires one or more of the same

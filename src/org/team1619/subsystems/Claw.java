@@ -8,6 +8,7 @@ package org.team1619.subsystems;
 import edu.wpi.first.wpilibj.Jaguar;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import org.team1619.RobotMap;
+import org.team1619.commands.MoveClaw;
 
 /**
  *
@@ -27,10 +28,16 @@ public class Claw extends Subsystem
     {
         // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
+        setDefaultCommand(new MoveClaw());
     }
     
-    public void move(double speed)
+    public void startMove(double speed)
     {
         clawMotor.set(speed);
+    }
+    
+    public void stopMove()
+    {
+        startMove(0);
     }
 }
